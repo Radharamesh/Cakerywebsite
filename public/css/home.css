@@ -1,0 +1,18 @@
+
+@media (min-width: 550px) {
+    .welcomegrid  img{
+        height: 600px;
+        width: 600px;
+    }
+}
+.welcomegrid  img{
+    height: 300px;
+    width: 300px;
+}
+@media (min-width: 750px) {
+.welcomegrid {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: var(--space-medium);
+}
+}
