@@ -1,19 +1,17 @@
-
-
-#background {
+/*#background {
    background-image: url(../img/Backgroundimages/annie-spratt-V1lmayjfBJc-unsplash.jpg);
     background-size: 100% 100%;
     background-position: center center;
     background-repeat: repeat-y;
     background-blend-mode: lighten;
     background-attachment: scroll; 
-}
+} */
 body {
-    
-    font-family: 'Dancing Script', cursive;
-    /*font-family: cursive;*/
-    font-size: var(--space-big);
-    padding: var(--space-big);
+  margin: 0;
+  padding: 0;
+  font-family: "Dancing Script", cursive;
+  /*font-family: cursive;*/
+  font-size: var(--space-big);
 }
 
 /* #welcomebackground {
@@ -21,33 +19,46 @@ body {
     background-image: url(../img/Backgroundimages/deva-williamson-ymy-t_sKkNk-unsplash.jpg);
 }*/
 
- 
 /* .links li{
     
    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 } */
-.intropage .logo{
-    
-    text-align: center;
+#main-section{
+    margin-top:0;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-height: 85vh;;
+}
+.intropage {
+  min-width: 80px;
+  background-color: turquoise;
+}
+.intropage .logo {
+  text-align: center;
+  margin:0;
 }
 
+.logo-img {
+    height: 100px;
+    width: 100px;
+}
 .pagelinks ul {
-    text-align: center;
-    font-size: var(--space-medium);
-    
+  text-align: center;
+  /*font-size: var(--space-medium);*/
 }
 
-.pagelinks li{
-    list-style: none;
-    display: inline-block;
-    margin: var(--space-small);
-    
+.pagelinks li {
+  list-style: none;
+  display: inline-block;
+  
+  margin: var(--space-small); 
 }
 .pagelinks a {
-    color: black;
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
+
 
 /* .contact-list a :hover {
     text-decoration: none;
@@ -56,38 +67,22 @@ body {
   border: solid var(--space-smaller) black;
 }
  */
- .contact-list a {
-    display : inline-block;
-    /*background-color:#b677d4;*/
-    /*background-color: #81f0a3;*/
-    background-color: black;
-    color:#81f0a3;
-    margin-bottom: var(--space-medium);
-    padding: var(--space-small);
+
+
+@media (min-width: 750px) {
+  body {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  .contact-list {
+    font-size: var(--space-big);
+  }
+  #background {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .pagelinks li {
+    font-size: var(--space-big);
+  }
 }
-
-
- .contact-list {
-     padding-left: 0;
-     list-style: none;
-     font-size: var(--space-medium);
- }
- 
- @media (min-width: 750px) {
-     body {
-        max-width: 960px;
-        margin: 0 auto;
-     }
-
-     .contact-list {
-        font-size: var(--space-big);
-     }
-     #background {
-        max-width: 960px;
-        margin: 0 auto;
-     }
-    .pagelinks li{
-        font-size: var(--space-big);
-        
-    }
- }
