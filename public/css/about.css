@@ -1,0 +1,23 @@
+#owner-img {
+    width: 300px;
+    max-height: 300px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#About-main-section p {
+margin-left: 10px;
+margin-right: 10px;
+align-items: center;
+}
+
+@media (min-width: 450px) {
+#About-main-section {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+}
+#About-main-section p {
+    margin-left: 50px;
+}
+}
